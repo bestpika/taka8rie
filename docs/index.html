@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>高橋李依誕生日</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+        min-width: 100vw;
+        min-height: 100vh;
+      }
+
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/bulma/css/bulma.min.css" />
+    <script src="https://use.ntpjs.org/ntp.js" async defer></script>
+    <script src="https://unpkg.com/luxon/build/global/luxon.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.min.js" defer></script>
+    <script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" defer></script>
+    <script src="./taka8rie.js" defer></script>
+  </head>
+
+  <body>
+    <div v-if="xday" id="taka8rie">
+      <section class="hero is-dark is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">高橋李依</h1>
+            <h2 class="subtitle">
+              <div v-html="xdayStr"></div>
+              <div v-html="diffStr"></div>
+            </h2>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+</html>
